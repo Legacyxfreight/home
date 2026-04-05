@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Business Name</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0d6efd;
+            color: white;
+            padding: 15px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') no-repeat center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .services {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 250px;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media(max-width: 600px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Your Business Name</h1>
+    <p>Reliable | Fast | Professional Services</p>
+</section>
+
+<div class="container">
+    <h2>Welcome</h2>
+    <p>
+        We provide top-quality services with reliability and professionalism.
+        Our goal is to deliver the best experience for our customers.
+    </p>
+</div>
+
+<div class="container">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Service 1</h3>
+            <p>Short description of your service.</p>
+        </div>
+
+        <div class="card">
+            <h3>Service 2</h3>
+            <p>Short description of your service.</p>
+        </div>
+
+        <div class="card">
+            <h3>Service 3</h3>
+            <p>Short description of your service.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Your Business Name | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
