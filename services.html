@@ -95,8 +95,93 @@
 <div class="container">
     <h2>Services</h2>
     <p>
-        Service 1
-        Service 2
+<!-- Services Section -->
+<section class="services-section">
+  <h2>Our Services</h2>
+  <div class="services-container">
+
+    <!-- Dry Freight -->
+    <div class="service-card">
+      <h3>Dry Freight</h3>
+      <p>We offer reliable logistics solutions for transporting all types of dry goods efficiently and securely.</p>
+    </div>
+
+    <!-- Intermodal Shipping -->
+    <div class="service-card">
+      <h3>Intermodal Shipping</h3>
+      <p>Our intermodal services provide a cost-effective, eco-friendly way to move your freight, giving you enhanced flexibility and control over every shipment.</p>
+    </div>
+
+    <!-- Flatbed / Step-Deck -->
+    <div class="service-card">
+      <h3>Flatbed / Step-Deck</h3>
+      <p>For shipments that don’t fit standard van lines, our flatbed and step-deck trucks can handle oversized or irregular cargo, including steel, lumber, containers, and other large items.</p>
+    </div>
+
+    <!-- Refrigerated Freight -->
+    <div class="service-card">
+      <h3>Refrigerated Freight</h3>
+      <p>We specialize in temperature-controlled transportation, ensuring your perishable or sensitive shipments arrive safely and on schedule.</p>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .services-section {
+    padding: 60px 20px;
+    background: #f6f6f6;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  .services-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .service-card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .service-card h3 {
+    color: #ff7e5f;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .service-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+
+  @media (max-width: 768px) {
+    .services-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
     </p>
 </div>
 
