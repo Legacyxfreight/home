@@ -4,7 +4,43 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>LegacyX Freight</title>
-      <style> body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; } header { padding: 15px 0; background: #183243; color: #ffad00; } nav { display: flex; justify-content: center; gap: 30px; } nav a { color: white; text-decoration: none; font-weight: bold; } .hero { background: url('Home_01.jpg') no-repeat center/cover; color: white; text-align: center; padding: 100px 20px; } .hero h1 { font-size: 40px; background: radial-gradient(circle, #f6a059 0%, rgba(19, 28, 11, 0.5) 70%, rgba(19, 28, 11, 0) 100%); } .container { padding: 40px 20px; max-width: 1000px; margin: auto; } .services { display: flex; gap: 20px; flex-wrap: wrap; } .card { flex: 1; min-width: 250px; background: #f4f4f4; padding: 20px; border-radius: 10px; } footer { background: #222; color: white; text-align: center; padding: 15px; } @media(max-width: 600px) { .hero h1 { font-size: 28px; } } </style>
+      <style> 
+         body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; } header { padding: 15px 0; background: #183243; color: #ffad00; } 
+         nav { display: flex; justify-content: center; gap: 30px; } nav a { color: white; text-decoration: none; font-weight: bold; } 
+         .hero { background: url('Home_01.jpg') no-repeat center/cover; color: white; text-align: center; padding: 100px 20px; } 
+         .hero h1 { font-size: 40px; background: radial-gradient(circle, #f6a059 0%, rgba(19, 28, 11, 0.5) 70%, rgba(19, 28, 11, 0) 100%); } 
+         .container { padding: 40px 20px; max-width: 1000px; margin: auto; } .services { display: flex; gap: 20px; flex-wrap: wrap; } 
+         .card { flex: 1; min-width: 250px; background: #f4f4f4; padding: 20px; border-radius: 10px; } 
+         footer { background: #222; color: white; text-align: center; padding: 15px; } @media(max-width: 600px) { .hero h1 { font-size: 28px; } }
+
+         .services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Cards */
+.service-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+}
+         
+      </style>
    </head>
    <body>
       <header>
@@ -14,23 +50,25 @@
          <h1>LegacyX Freight</h1>
          <p>Reliable | Fast | Professional Services</p>
       </section>
+
       <div class="container">
-         <h2>Services</h2>
-         <p>
-            <!-- Dry Freight --> 
-         <div class="service-card">
-            <h3>Dry Freight</h3>
-            <p>We offer reliable logistics solutions for transporting all types of dry goods efficiently and securely.</p>
-         </div>
-         <!-- Refrigerated Freight --> 
-         <div class="service-card">
-            <h3>Refrigerated Freight</h3>
-            <p>We specialize in temperature-controlled transportation, ensuring your perishable or sensitive shipments arrive safely and on schedule.</p>
-         </div>
-         <div style="clear:float" ></div>
-         <style> .services-section { padding: 60px 20px; background: #f6f6f6; font-family: Arial, sans-serif; text-align: center; } .services-section h2 { font-size: 32px; margin-bottom: 40px; color: #333; } .services-container { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; } .service-card { background: #fff; padding: 30px 20px; border-radius: 12px; flex: 1 1 250px; max-width: 300px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; float:left; max-height: 200px; min-height: 198px; } .service-card h3 { font-size: 22px; margin-bottom: 15px; } .service-card p { color: #555; font-size: 16px; line-height: 1.5; } .service-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); } @media (max-width: 768px) { .services-container { flex-direction: column; align-items: center; } } </style>
-         </p>
-      </div>
+  <h2>Services</h2>
+
+  <div class="services-container">
+
+    <div class="service-card">
+      <h3>Dry Freight</h3>
+      <p>We offer reliable logistics solutions for transporting all types of dry goods efficiently and securely.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Refrigerated Freight</h3>
+      <p>We specialize in temperature-controlled transportation, ensuring your shipments arrive safely and on schedule.</p>
+    </div>
+
+  </div>
+</div>
+      
       <footer>
          <p>© 2026 Your Business Name | All Rights Reserved</p>
       </footer>
